@@ -1,22 +1,19 @@
-import java.util.Arrays;
+public static void main(String[] args) {
+    String s1 = "listen";
+    String s2 = "silent";
 
-public class AnagramCheck {
-    public static boolean isAnagram(String s1, String s2) {
-        if (s1.length() != s2.length()) {
-            return false;
-        }
+    boolean result = isAnagram(s1, s2);
+    System.out.println("String 1: " + s1);
+    System.out.println("String 2: " + s2);
+    System.out.println("Are they anagrams? " + result);
 
-        char[] a = s1.toLowerCase().toCharArray();
-        char[] b = s2.toLowerCase().toCharArray();
+    System.out.println();
 
-        Arrays.sort(a);
-        Arrays.sort(b);
+    s1 = "hello";
+    s2 = "world";
 
-        return Arrays.equals(a, b);
-    }
-
-    public static void main(String[] args) {
-        System.out.println(isAnagram("listen", "silent")); // true
-        System.out.println(isAnagram("hello", "world"));   // false
-    }
+    result = isAnagram(s1, s2);
+    System.out.println("String 1: " + s1);
+    System.out.println("String 2: " + s2);
+    System.out.println("Are they anagrams? " + result);
 }
