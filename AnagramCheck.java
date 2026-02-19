@@ -17,8 +17,8 @@ public class AnagramCheck {
     }
 
     public static void main(String[] args) {
-        String s1 = "listen";
-        String s2 = "silent";
+        String s1 = "heart";
+        String s2 = "earth";
 
         System.out.println("String 1: " + s1);
         System.out.println("String 2: " + s2);
@@ -34,3 +34,4 @@ public class AnagramCheck {
         System.out.println("Are they anagrams? " + isAnagram(s1, s2));
     }
 }
+
